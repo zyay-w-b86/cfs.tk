@@ -1,6 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
-
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+      router: {
+        base: '/cfs.tk/'
+      }
+    }
+    : {}
 export default {
+  ...routerBase,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -39,6 +47,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
