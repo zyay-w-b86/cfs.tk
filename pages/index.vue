@@ -9,7 +9,7 @@
 
         <v-row>
             <v-col>
-                <v-card class="mx-auto" max-width="344" elevation="3" outlined href="/tolerance">
+                <v-card class="mx-auto" max-width="344" elevation="3" outlined to="/tolerance">
                     <v-card-text>
                         <div>Engineering tolerance</div>
                         <p class="text-h4 text--primary">
@@ -25,7 +25,7 @@
                 </v-card>
             </v-col>
             <v-col>
-                <v-card class="mx-auto" max-width="344" elevation="3" outlined href="/angle">
+                <v-card class="mx-auto" max-width="344" elevation="3" outlined to="/angle">
                     <v-card-text>
                         <div>Engineering tolerance</div>
                         <p class="text-h4 text--primary">
